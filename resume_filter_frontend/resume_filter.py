@@ -19,4 +19,5 @@ if st.button("Filter Resume"):
     data: bytes = uploaded_file.read()
     filtred_resumes: list[str] = fetch_filtred_resumes(data)
 
-    st.text(filtred_resumes)
+    st.text("Filtred Resume IDs:")
+    st.code(filtred_resumes)
